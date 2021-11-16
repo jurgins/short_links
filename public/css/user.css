@@ -1,0 +1,12 @@
+.user-info {
+    margin: 10px 0;
+    background: #FAFAFA;
+    border: 1px solid silver;
+    padding: 20px 3%;
+    width: 94%;
+}
+
+.user-info .btn {
+    margin-top: 20px;
+    margin-left: 0;
+}

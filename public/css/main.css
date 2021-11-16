@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-weight: 400;
+    background: #fff;
+}
+
+img {max-width: 100%}
+
+.auth-checkout a {
+    color: darkgrey;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: all 0.6s ease;
+}
+
+a:hover {
+    color: #000000;
+    transition: all 0.6s ease;
+}
+
+.container {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+}
+
+@media(max-width: 900px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+}
+
+header > .middle {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .middle > .logo img {
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+header > .middle > .logo span {
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    width: 250px;
+    margin-top: 30px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    background: #333;
+    border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 600ms ease;
+}
+
+header .btn.auth {
+    width: 100px;
+    background: #ff5644;
+}
+
+
+.btn:hover {
+    transition: all 600ms ease;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.3);
+}
+
+header .btn.dashboard {
+    width: 200px;
+    background: #ff5644;
+}
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main p {
+    margin: 20px 0;
+}
+.main p a {
+    margin: 0;
+    color: deepskyblue;
+}
+
+.link {
+    background-color: lightgrey;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.link .btn {
+    background-color: darkgrey;
+    color: white;
+}
+
+.link .btn>span>img{
+    vertical-align: bottom;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer > .social > i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background: silver;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: transform 600ms ease;
+    color: #333;
+}
+
+footer > .social > i:hover {
+    transition: transform 600ms ease;
+    transform: translateY(-5px);
+}

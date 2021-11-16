@@ -1,0 +1,17 @@
+ServerSignature off
+AddDefaultCharset UTF-8
+
+Options -MultiViews
+RewriteEngine On
+
+RewriteBase /short_links/
+ErrorDocument 404 /short_links/error.php
+ErrorDocument 400 /short_links/error.php
+ErrorDocument 403 /short_links/error.php
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?url=$1
+
